@@ -1,3 +1,9 @@
+.tw-follows {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .tw-followCard {
   display: flex;
   align-items: center;
@@ -28,6 +34,7 @@
 }
 
 .tw-followCard-button {
+  width: max-content;
   cursor: pointer;
   margin-left: 16px;
   border: 0;
@@ -50,7 +57,10 @@
   border: 1px solid #bbb;
   background: transparent;
   color: #fff;
-  width: 140px;
+}
+
+.tw-followCard-button.is-following:hover::after {
+  content: "Dejar de seguir";
 }
 
 .tw-followCard-button.is-following:hover {
